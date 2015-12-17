@@ -1,35 +1,29 @@
 {
-  "name": "react-FirstApp",
-  "version": "0.0.0",
-  "description": "React Components example",
-  "main": "main.js",
-  "scripts": {
-    "watch": "watchify main.js -o public/js/bundle.js -v",
-    "browserify": "browserify main.js | uglifyjs > public/js/bundle.js",
-    "build": "npm run browserify ",
-    "start": "npm install"
-  },
-  "author": "Gomis Florian",
-  "license": "MIT",
-  "dependencies": {
-    "express": "~4.9.7",
-    "nunjucks": "~1.2.0",
-    "mongoose": "^3.8.23",
-    "node-jsx": "~0.11.0",
-    "react": "~0.11.2",
-    "socket.io": "^1.1.0",
-    "react-style": "*"
-  },
-  "devDependencies": {
-    "browserify": "~6.0.3",
-    "nodemon": "^1.2.1",
-    "reactify": "~0.14.0",
-    "uglify-js": "~2.4.15",
-    "watchify": "^3.1.1"
-  },
-  "browserify": {
-    "transform": [
-      "reactify"
-    ]
-  }
+    "name": "react-FirstApp",
+    "version": "0.0.0",
+    "description": "React Components example",
+    "main": "main.js",
+    "scripts": {
+        
+    },
+    "author": "Gomis Florian",
+    "license": "MIT",
+    "dependencies": {
+        "babel-preset-react": "*",
+        "babelify": "*",
+        
+        "grunt": "^0.4.5",
+        "grunt-browserify": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-sass": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-concat": "*",
+        
+        "node-jsx": "~0.11.0",
+        "react": "*",
+        "react-dom": "*",
+        "reactify": "*",
+        
+        "socket.io": "^1.1.0"
+    }
 }

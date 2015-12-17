@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var React = require('react');
 
 var Id;
@@ -42,8 +41,8 @@ module.export = MonComposant = React.createClass({
     },
     render: function(){
         var backgroundStyle = {
-            height: '400px',
-            width: '400px',
+            height: '200px',
+            width: '200px',
             backgroundColor: 'tomato',
             textAlign: 'center',
             borderWidth: '2px',
@@ -51,7 +50,7 @@ module.export = MonComposant = React.createClass({
             borderColor: 'black'
         };
         var alignCenter = {
-            lineHeight: '300px'
+            lineHeight: '40px'
         };
         var styleButton = {
             borderStyle: 'solid',
@@ -61,7 +60,7 @@ module.export = MonComposant = React.createClass({
         };
         return( 
         <div style={backgroundStyle}>
-            <div style={alignCenter}> <h1 style={ {color: 'floralwhite' } }> Time passed : { this.state.counter } Secondes </h1> </div>
+            <div style={alignCenter}> <h3 style={ {color: 'floralwhite' } }> Time passed : { this.state.counter } Secondes </h3> </div>
             <div> <input type='button' style={styleButton} onClick={ this.playCounter } value={ this.state.btnValue } ></input> </div>
         </div>
         );
